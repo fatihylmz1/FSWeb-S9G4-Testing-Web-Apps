@@ -3,13 +3,13 @@ import React from 'react';
 const Goruntule = (props) => {
     const { ad, soyad, email, mesaj } = props.form;
 
-    return(<div id="displayContainer">
+    return (<div id="displayContainer" data-testid="gönderilen">
         <h1>Gönderilen:</h1>
 
-        { ad && <p data-testid="firstnameDisplay"><strong>Ad: </strong>{ad}</p> }
-        { soyad && <p data-testid="lastnameDisplay"> <strong>Soyad: </strong>{soyad}</p> }
-        { email && <p data-testid="emailDisplay"><strong>Email: </strong>{email}</p> }
-        { mesaj && <p data-testid="messageDisplay"><strong>Mesaj: </strong>{mesaj}</p> }
+        {ad && <p data-testid="firstnameDisplay"><strong>Ad: </strong>{ad}</p>}
+        {soyad && <p data-testid="lastnameDisplay"> <strong>Soyad: </strong>{soyad}</p>}
+        {email && <p data-testid="emailDisplay"><strong>Email: </strong>{email}</p>}
+        {mesaj && <p data-testid="messageDisplay"><strong>Mesaj: </strong>{mesaj}</p>}
     </div>);
 };
 
